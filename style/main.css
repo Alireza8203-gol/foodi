@@ -1,0 +1,159 @@
+:root {
+  --text-titles: #000000;
+  --text-subtitle: #555555;
+  --text-header-subtitle: #4A4A4A;
+  --primary-green: #39DB4A;
+  --shape-green: #53EC62;
+  --pale-green: #C1F1C6;
+}
+
+body {
+  color: var(--text-titles);
+  font-family: inter-medium, serif;
+  background: linear-gradient(180deg, #FAFAFA 0%, #FCFCFC 100%);
+}
+
+/*
+
+////////// helper classes //////////
+
+*/
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*
+
+////////// main styles //////////
+
+*/
+
+.svg-sprite {
+  display: none;
+}
+
+.header {
+  margin-top: 50px;
+}
+
+.header-content-wrapper {
+  display: none;
+  justify-content: space-between;
+}
+
+.header-logo {
+  column-gap: 5px;
+}
+
+.header-logo__f {
+  width: 34px;
+  height: 41px;
+  padding: 7.5px 8.5px;
+  background-color: var(--primary-green);
+  border-radius: 8px;
+}
+
+.header-logo__f-svg {
+  width: 18.5px;
+  height: 24px;
+}
+
+.header-logo__oodi-svg {
+  width: 70px;
+  height: 23px;
+}
+
+/*  header menu  */
+
+.header-menu {
+
+}
+
+.header-menu__ul {
+  column-gap: 55px;
+}
+
+.header-menu__li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: poppins-medium, serif;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.header-menu__li--active {
+  color: var(--primary-green);
+}
+
+.header-menu__svg {
+  width: 30px;
+  height: 30px;
+  color: var(--primary-green);
+}
+
+/*  header menu  */
+
+.header__left-side {
+  column-gap: 45px;
+}
+
+.header__search-svg {
+  width: 32px;
+  height: 32px;
+}
+
+.header__shopping-bag {
+  position: relative;
+}
+
+.header__shoppingBag-svg {
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+
+.header__shopping-bag::after {
+  content: '8';
+  position: absolute;
+  top: -20%;
+  right: -40%;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--primary-green);
+  font-family: inter-bold, serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: white;
+  /*padding: 2px;*/
+  text-align: center;
+}
+
+.header__contact-btn {
+  column-gap: 14px;
+  border-radius: 40px;
+  font-family: poppins-medium, serif;
+  font-size: 20px;
+  line-height: 30px;
+  color: white;
+  padding: 15px 27px;
+  background-color: var(--primary-green);
+}
+
+.header__phone-svg {
+  width: 24px;
+  height: 24px;
+  color: white;
+  margin-left: 5px;
+}
+
+/*  mobile header  */
+
+.header-mobile {
+  justify-content: space-between;
+}
+
