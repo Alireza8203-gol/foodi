@@ -65,7 +65,7 @@
   /*  home section  */
 
   .wrapper {
-    grid-column: 2;
+    flex-direction: row;
   }
 
 }
