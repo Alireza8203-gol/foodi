@@ -38,6 +38,36 @@ body {
   visibility: visible;
 }
 
+.message {
+  padding: 18px 51px 18px 27px;
+  border-radius: 50px;
+  width: 248px;
+  position: relative;
+  box-shadow: 26px 22px 51px #00000024;
+  background: #FBFBFB;
+}
+
+.message__span {
+  color: #FF6868;
+  font-family: "inter-semiBold", serif;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.message__tail {
+  border-radius: 15px;
+  position: absolute;
+  bottom: -23px;
+  right: -3px;
+  width: 0;
+  height: 0;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-right: 35px solid #FBFBFB;
+  transform: rotate(-10deg);
+}
+
+
 /*
 
 ////////// helper classes //////////
@@ -48,6 +78,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.absolute {
+  position: absolute;
 }
 
 /*
@@ -410,4 +444,130 @@ body {
   padding: 20px 50px;
   font-size: 23px;
   border-radius: 25px;
+}
+
+/*  home section  */
+
+
+.home {
+
+}
+
+.wrapper {
+  /*height: 1000px;*/
+  justify-content: space-between;
+}
+
+/*  right side  */
+
+.home-left {
+  color: var(--text-titles);
+  row-gap: 55px;
+  flex-direction: column;
+  width: 40%;
+  justify-content: flex-start;
+  margin-top: 25px;
+}
+
+.home-left__title {
+  font-family: inter-extraBold, serif;
+  font-size: 55px;
+  line-height: 85px;
+
+}
+
+.home-left__title > span {
+  color: var(--primary-green);
+}
+
+.home-left__subtitle {
+  font-family: inter-medium, serif;
+  font-size: 23px;
+  line-height: 42px;
+  color: var(--text-header-subtitle);
+}
+
+.home-buttons {
+  column-gap: 30px;
+  align-self: flex-start;
+}
+
+.home-buttons__order,
+.home-buttons__watch > span {
+  font-family: "inter-semiBold", serif;
+  font-size: 23px;
+  line-height: 30px;
+}
+
+.home-buttons__order {
+  color: white;
+  padding: 22px 45px;
+  background-color: var(--primary-green);
+  box-shadow: -2px 22px 38px #8EFF9A80;
+  border-radius: 40px;
+}
+
+.home-buttons__watch {
+  color: #4D4D4D;
+  column-gap: 22px;
+}
+
+.home-buttons__span {
+
+}
+
+.home-buttons__play {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 6px 27px 34px #0000001A;
+}
+
+.home-buttons__play-svg {
+  width: 36px;
+  height: 36px;
+  color: #1E1E1E;
+}
+
+/*  left side  */
+
+.home-right {
+  position: relative;
+}
+
+.circle {
+  position: absolute;
+  width: 662px;
+  aspect-ratio: 1/1;
+  /*inset: 0;*/
+  /*margin: auto;*/
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+  background-color: var(--shape-green);
+  z-index: -1;
+}
+
+.home-right__image {
+  /*z-index: 5;*/
+}
+
+.home-message {
+  position: absolute;
+  top: 170px;
+  left: -75px;
+}
+
+.home-products {
+  width: 100%;
+  column-gap: 40px;
+  justify-content: space-between;
+  right: 26px;
+  bottom: -65px;
+}
+
+.home-product {
+  width: 349px;
+  height: 132px;
 }
