@@ -14,6 +14,11 @@
   .container {
     max-width: 720px;
   }
+
+  .mobile-menu,
+  .mobile-cart {
+    width: 50%;
+  }
 }
 @media screen and (min-width: 992px) {
   .container {
@@ -25,14 +30,33 @@
   }
 
   .header-menu__ul {
-
+    column-gap: 35px;
   }
 
   .header-menu__li {
     cursor: pointer;
   }
 
+  .header__contact-btn {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+
+  .header__phone-svg {
+    width: 20px;
+    height: 20px;
+  }
+
   .header-mobile {
+    display: none;
+  }
+
+  .mobile-menu,
+  .mobile-cart {
+    display: none;
+  }
+
+  .overlay {
     display: none;
   }
 }
