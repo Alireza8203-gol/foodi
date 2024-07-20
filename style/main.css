@@ -39,9 +39,10 @@ body {
 }
 
 .message {
-  padding: 18px 51px 18px 27px;
+  display: none;
+  padding: 18px 27px;
   border-radius: 50px;
-  width: 248px;
+  width: 150px;
   position: relative;
   box-shadow: 26px 22px 51px #00000024;
   background: #FBFBFB;
@@ -57,14 +58,15 @@ body {
 .message__tail {
   border-radius: 15px;
   position: absolute;
-  bottom: -23px;
-  right: -3px;
+  bottom: -13px;
+  right: 6px;
   width: 0;
   height: 0;
-  border-top: 30px solid transparent;
-  border-bottom: 30px solid transparent;
-  border-right: 35px solid #FBFBFB;
-  transform: rotate(-10deg);
+  border-top: 15px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 20px solid #FBFBFB;
+  transform: rotate(-6deg);
+  box-shadow: 26px 22px 51px #00000024;
 }
 
 
@@ -449,10 +451,6 @@ body {
 /*  home section  */
 
 
-.home {
-
-}
-
 .wrapper {
   flex-direction: column;
   justify-content: space-between;
@@ -462,17 +460,18 @@ body {
 
 .home-left {
   color: var(--text-titles);
-  row-gap: 55px;
+  row-gap: 35px;
   flex-direction: column;
-  width: 40%;
   justify-content: flex-start;
   margin-top: 25px;
+  order: 2;
+  text-align: center;
 }
 
 .home-left__title {
   font-family: inter-extraBold, serif;
-  font-size: 55px;
-  line-height: 85px;
+  font-size: 30px;
+  line-height: 50px;
 
 }
 
@@ -482,12 +481,13 @@ body {
 
 .home-left__subtitle {
   font-family: inter-medium, serif;
-  font-size: 23px;
-  line-height: 42px;
+  font-size: 15px;
+  line-height: 30px;
   color: var(--text-header-subtitle);
 }
 
 .home-buttons {
+  width: 100%;
   column-gap: 30px;
   align-self: flex-start;
 }
@@ -495,13 +495,13 @@ body {
 .home-buttons__order,
 .home-buttons__watch > span {
   font-family: "inter-semiBold", serif;
-  font-size: 23px;
+  font-size: 17px;
   line-height: 30px;
 }
 
 .home-buttons__order {
   color: white;
-  padding: 22px 45px;
+  padding: 10px 18px;
   background-color: var(--primary-green);
   box-shadow: -2px 22px 38px #8EFF9A80;
   border-radius: 40px;
@@ -509,28 +509,24 @@ body {
 
 .home-buttons__watch {
   color: #4D4D4D;
-  column-gap: 22px;
-}
-
-.home-buttons__span {
-
+  column-gap: 12px;
 }
 
 .home-buttons__play {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  aspect-ratio: 1 / 1;
   border-radius: 50%;
   background-color: white;
   box-shadow: 6px 27px 34px #0000001A;
 }
 
 .home-buttons__play-svg {
-  width: 36px;
-  height: 36px;
+  width: 30px;
+  aspect-ratio: 1/1;
   color: #1E1E1E;
 }
 
-/*  left side  */
+/*  right side  */
 
 .home-right {
   position: relative;
@@ -538,10 +534,8 @@ body {
 
 .circle {
   position: absolute;
-  width: 662px;
+  width: 100%;
   aspect-ratio: 1/1;
-  /*inset: 0;*/
-  /*margin: auto;*/
   bottom: 0;
   right: 0;
   border-radius: 50%;
@@ -550,21 +544,26 @@ body {
 }
 
 .home-right__image {
-  /*z-index: 5;*/
+  width: 100%;
+}
+
+.home-right__img {
+  width: inherit;
 }
 
 .home-message {
   position: absolute;
-  top: 170px;
-  left: -75px;
+  top: 100px;
+  left: 0;
 }
 
 .home-products {
+  display: none;
   width: 100%;
   column-gap: 40px;
   justify-content: space-between;
-  right: 26px;
-  bottom: -65px;
+  right: 0;
+  bottom: 0;
 }
 
 .home-product {

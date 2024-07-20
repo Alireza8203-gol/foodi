@@ -16,15 +16,69 @@
     max-width: 720px;
   }
 
+  .message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .mobile-menu,
   .mobile-cart {
     width: 50%;
   }
+
+  .home-left__title {
+    font-size: 45px;
+    line-height: 65px;
+  }
+
+  .home-left__subtitle {
+    font-size: 20px;
+    line-height: 42px;
+    max-width: 70%;
+  }
+
+  .home-buttons {
+    column-gap: 55px;
+  }
+
+  .home-buttons__order {
+    padding: 15px 45px;
+  }
+
+  .home-buttons__watch {
+    column-gap: 22px;
+  }
+
+  .home-buttons__play {
+    width: 80px;
+  }
+
+  .home-buttons__play-svg {
+    width: 36px;
+    height: 36px;
+  }
+
+
 }
 
 @media screen and (min-width: 992px) {
   .container {
     max-width: 960px;
+  }
+
+  .message {
+    width: auto;
+    padding: 18px 51px 18px 27px;
+  }
+
+  .message__tail {
+    bottom: -23px;
+    right: -3px;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-right: 35px solid #FBFBFB;
+    transform: rotate(-10deg);
   }
 
   .header-content-wrapper {
@@ -68,11 +122,82 @@
     flex-direction: row;
   }
 
+  .home-left {
+    width: 40%;
+    text-align: left;
+    order: 1;
+  }
+
+  .home-left__title {
+    font-size: 40px;
+    line-height: 60px;
+  }
+
+  .home-left__subtitle {
+    font-size: 23px;
+    max-width: unset;
+  }
+
+  .home-buttons {
+    width: auto;
+    column-gap: 30px;
+  }
+
+  .home-buttons__order,
+  .home-buttons__watch > span {
+    font-size: 23px;
+  }
+
+  .home-buttons__order {
+    padding: 25px 55px;
+  }
+
+  .home-buttons__order {
+    padding: 22px 45px;
+  }
+
+  .home-right {
+    order: 2;
+  }
+
+  .circle {
+    width: 550px;
+  }
+
+  .home-message {
+    top: 170px;
+    left: -75px;
+  }
+
+  .home-products {
+    right: 26px;
+    bottom: -65px;
+  }
+
 }
 
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1140px;
+  }
+
+  .home-left {
+    row-gap: 55px;
+  }
+
+  .home-left__title {
+    font-size: 55px;
+    line-height: 85px;
+  }
+
+  .circle {
+    width: 662px;
+  }
+
+  .home-products {
+    right: 0;
+    display: flex;
+
   }
 }
 
