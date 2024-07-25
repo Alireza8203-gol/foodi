@@ -589,6 +589,7 @@ body {
 .home-product {
   width: 349px;
   height: 132px;
+  box-shadow: 7px 35px 51px #00000024;
 }
 
 /*  CATEGORIES SECTION  */
@@ -647,4 +648,149 @@ body {
   font-size: 22px;
   line-height: 27px;
   color: var(--text-subtitle);
+}
+
+/*  DISHES SECTION  */
+
+.dishes .sections-header {
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.dishes .sections-header .sections-header__text  {
+  width: 40%;
+}
+
+.dishes .sections-header .sections-header__text .section-header__subtitle {
+  text-align: left;
+}
+
+.swipe-btn-wrapper {
+  column-gap: 50px;
+}
+
+.swipe-btn {
+  width: 80px;
+  height: 80px;
+  background-color: #EFEFEF;
+  border-radius: 50%;
+  color: #6F6E6E;
+}
+
+.swipe__svg {
+  width: 40px;
+  aspect-ratio: 1 / 1;
+}
+
+.swipe-btn:hover {
+  background-color: #39DB4A;
+}
+
+.swipe-btn:hover .swipe__svg {
+  color: white;
+}
+
+.button-next {
+  transform: rotate(180deg);
+}
+
+.dishes__slides {
+  margin-top: 63px;
+}
+
+.dish-card {
+  flex-direction: column;
+  padding: 44px 0;
+  border-radius: 40px;
+  position: relative;
+  background-color: white;
+  box-shadow: 2px 9px 42px #00000014;
+  gap: 25px;
+}
+
+.dish-card__heart {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 87px;
+  height: 75px;
+  border-radius: 0 37.5px 0 42.5px;
+  background-color: #39DB4A;
+}
+
+.dish-card__heart-svg {
+  width: 27px;
+  height: 27px;
+  color: white;
+}
+
+.dish-card__image {
+
+}
+
+.dish-card__img {
+
+}
+
+.dish-card__details {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.dish-card__title {
+  font-family: inter-semiBold, serif;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.dish-card__caption {
+  font-family: inter-semiBold, serif;
+  font-size: 22px;
+  line-height: 27px;
+  color: var(--text-subtitle);
+  margin-top: 19px;
+  margin-bottom: 28px;
+}
+
+.dish-card__footer {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.dish-card__price {
+  align-items: flex-end;
+}
+
+.dish-card__dollar,
+.dish-card__rate-number {
+  font-family: inter-semiBold, serif;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+
+.dish-card__dollar {
+  color: #FF6868;
+}
+
+.dish-card__price-number {
+  font-family: inter-semiBold, serif;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.dish-card__rating {
+  column-gap: 15px;
+
+}
+
+.dish-card__star {
+  width: 27px;
+  height: 27px;
+  color: #FFE605;
+}
+
+.dish-card__rate-number {
+  color: #454545;
 }
