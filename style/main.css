@@ -26,7 +26,7 @@ body {
   display: none;
   opacity: 0;
   visibility: hidden;
-  position: absolute;
+  position: fixed;
   inset: 0;
   z-index: 5;
   background: #00000066;
@@ -311,7 +311,7 @@ body {
 
 .mobile-menu,
 .mobile-cart {
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   z-index: 10;
