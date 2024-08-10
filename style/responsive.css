@@ -277,6 +277,11 @@
     width: 50%;
   }
 
+  /*  FOOTER SECTION  */
+
+  .footer-top {
+    column-gap: 10px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -341,6 +346,13 @@
 
   .services__right-side {
     width: 44%;
+  }
+
+  /*  FOOTER SECTION  */
+
+  .footer-bottom {
+    justify-content: flex-start;
+    column-gap: 170px;
   }
 }
 
